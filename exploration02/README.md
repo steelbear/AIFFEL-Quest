@@ -1,6 +1,6 @@
 # AIFFEL Campus Online 5th Code Peer Review
 - 코더 : 최철웅
-- 리뷰어 : 본인의 이름을 작성하세요.
+- 리뷰어 : 홍수정
 
 
 # PRT(PeerReviewTemplate) 
@@ -8,14 +8,25 @@
 
 - [X] 코드가 정상적으로 동작하고 주어진 문제를 해결했나요?
   
-- [ ] 주석을 보고 작성자의 코드가 이해되었나요?
-  > 위 항목에 대한 근거 작성 필수
-- [ ] 코드가 에러를 유발할 가능성이 없나요?
-  >위 항목에 대한 근거 작성 필수
-- [ ] 코드 작성자가 코드를 제대로 이해하고 작성했나요?
-  > 위 항목에 대한 근거 작성 필수
-- [ ] 코드가 간결한가요?
-  > 위 항목에 대한 근거 작성 필수
+- [X] 주석을 보고 작성자의 코드가 이해되었나요?
+  > 왜 진행하는 지 각 코드 시작마다 설명을 하기 때문에 이해할 수 있었음
+- [X] 코드가 에러를 유발할 가능성이 없나요?
+  > 진행에서 필수적인 부분은 명확하게 정의하여 넘어갔기 때문에 에러가 발생할 가능성은 적다고 판단함
+- [X] scaler를 사용하여 입력 데이터를 정규화하여 성능의 향상을 도모함
+```python
+scaler = RobustScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+```
+- [X] 코드가 간결한가요?
+- kwargs를 사용하여 기존의 작성된 코드를 재사용함
+```python
+models = [
+    {
+        'name': 'GradientBoosting',
+        'model': GradientBoostingRegressor(random_state=random_state, **gb_params)
+    },]
+```
 
 # 예시
 1. 코드의 작동 방식을 주석으로 기록합니다.
