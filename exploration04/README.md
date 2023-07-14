@@ -1,6 +1,6 @@
 # AIFFEL Campus Online 5th Code Peer Review
 - 코더 : 최철웅
-- 리뷰어 : [이태훈](https://github.com/git-ThLee)
+- 리뷰어 : [이태훈^^](https://github.com/git-ThLee)
 
 
 # PRT(PeerReviewTemplate) 
