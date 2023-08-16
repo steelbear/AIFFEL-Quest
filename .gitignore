@@ -1,2 +1,7 @@
 */.ipynb_checkpoints/*
 */*.h5
+*/*/*.keras
+*/*/*.txt
+*/*/*.vocab
+*/*/*.model
+*/logs/*
